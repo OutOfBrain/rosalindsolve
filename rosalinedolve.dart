@@ -4,11 +4,7 @@ import 'dart:html';
 class RosalindSolver {
   dna(String input) {
     // init counter
-    var counter = new Map();
-    counter['A'] = 0;
-    counter['C'] = 0;
-    counter['G'] = 0;
-    counter['T'] = 0;
+    var counter = {'A' : 0, 'C' : 0, 'G' : 0, 'T' : 0};
 
     for (var char in input.splitChars()) {
       if (counter.containsKey(char)) { // necessary since dart does not linke if element does not exist yet
