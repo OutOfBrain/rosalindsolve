@@ -59,6 +59,17 @@ class RosalindSolver {
 
     return reverse(complement(input));
   }
+
+
+  gc(String input) {
+    List lines = input.split('\n');
+
+    var processLine = (input) {
+      return line;
+    };
+
+    return input;
+  }
 }
 
 
@@ -81,6 +92,7 @@ void main() {
       case 'dna':  solveMethod = solver.dna;  break;
       case 'rna':  solveMethod = solver.rna;  break;
       case 'revc': solveMethod = solver.revc; break;
+      case 'gc':   solveMethod = solver.gc;   break;
     }
 
     if (solveMethod != null) {
